@@ -1,0 +1,51 @@
+.autoScrollContainer {
+  width: 400px;
+  height: 384px;
+  margin: -40px auto 0 auto;
+  background: #fbc171;
+  padding: 30px 36px;
+  border-radius: 3px;
+  overflow: hidden;
+  .autoScrollInner {
+    height: 322px;
+    overflow: hidden;
+    border: 1px solid #a41d17;
+    border-radius: 3px;
+  }
+  .autoScrollBody {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    overflow: hidden;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    &.anim {
+      animation-name: scrollTop;
+    }
+    .autoScrollItem {
+      height: 40px;
+      line-height: 40px;
+      flex: 0 0 100%;
+      text-align: center;
+      color: #b71e18;
+      span {
+        font-size: 16px;
+        color: #b71e18;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      &.odd {
+        background: #f4b256;
+      }
+    }
+  }
+}
+@keyframes scrollTop {
+  to {
+    animation-timing-function: ease-in-out;
+  }
+  to {
+    transform: translate(0, -40px);
+  }
+}

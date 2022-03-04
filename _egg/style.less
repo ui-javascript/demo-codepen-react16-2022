@@ -1,0 +1,64 @@
+.container {
+  background-color: #a41d17;
+  padding-bottom: 50px;
+  min-width: 1000px;
+}
+.playGround {
+  height: 780px;
+  background: url(./images/desk_bg_bim.jpg) no-repeat center center;
+  overflow: hidden;
+}
+.playGroundInner {
+  position: relative;
+  overflow: hidden;
+  cursor: none;
+  margin: 200px auto 0 auto;
+}
+.hammer {
+  position: absolute;
+  z-index: 999;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  pointer-events: none;
+}
+@keyframes smash {
+  75% {
+    animation-timing-function: ease-in-out;
+  }
+  to {
+    animation-timing-function: ease-in;
+  }
+  75% {
+    transform: rotate(20deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
+.hammerAnim {
+  animation-name: smash;
+}
+.goldenEgg {
+  position: absolute;
+  pointer-events: none;
+  cursor: none;
+  .fullEgg {
+    width: 100%;
+    pointer-events: none;
+    cursor: none;
+  }
+  .brokenEgg {
+    width: 100%;
+    margin-top: 36%;
+    cursor: none;
+  }
+  .hotZone {
+    position: absolute;
+    top: 0;
+    left: 21%;
+    width: 62%;
+    height: 89%;
+    pointer-events: auto;
+    cursor: none;
+  }
+}
