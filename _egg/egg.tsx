@@ -5,7 +5,7 @@ import FullEgg from './images/full_egg.png';
 import BrokenEgg from './images/broken_egg.png';
 
 import classNames from 'classnames';
-import AutoScroll from './components/AutoScroll';
+// import AutoScroll from './components/AutoScroll';
 import { users, phones, prizes } from './users';
 import { message } from 'antd';
 import _ from 'lodash';
@@ -120,14 +120,14 @@ const App: React.FC = () => {
           <Hammer x={mouse.x} y={mouse.y} active={smashing} />
         </div>
       </div>
-      <AutoScroll<string>
+      {/* <AutoScroll<string>
         list={msgs}
         length={9}
         scrollInterval={3000}
         scrollSpeed={1000}
         scrollStep={1}
         renderItem={(item) => <span>{item}</span>}
-      ></AutoScroll>
+      ></AutoScroll> */}
     </div>
   );
 };
