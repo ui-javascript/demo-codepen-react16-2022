@@ -9,9 +9,10 @@ export default {
 
 
     // 路径写法示例
-    entry: './_egg/egg.tsx',
+    // entry: './_egg/egg.tsx',
     // entry: './__demo/*.js',
     // entry: './__demo/module/*.{js,tsx}',
 
+    entry: './_spotlight/index.js',
   
 }
